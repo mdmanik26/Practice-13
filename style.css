@@ -1,0 +1,103 @@
+h1{
+    color: tomato;
+    text-align: center;
+}
+
+h1::before{
+    content: 'Age';
+}
+
+h1::after{
+    content: 'Pore';
+}
+
+p::before{
+    content: '"';
+}
+
+p::after{
+    content: '"';
+}
+
+
+a{
+    display: inline-block;
+    background: rgb(112 111 106);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+
+.btn1::before{
+    content: "";
+    background: black;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn1:hover::before{
+    width: 100%;
+}
+
+.btn2::before{
+    content: "";
+    background: black;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn2:hover::before{
+    height: 100%;
+}
+
+.btn3::before{
+    content: "";
+    background: black;
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 1s;
+}
+
+.btn3:hover::before{
+    width: 100%;
+}
+
+
+
+
+li{
+    list-style: none;
+}
+
+li::before {
+    font: var(--fa-font-solid);
+    content: '\f14a';
+    color: rgb(89, 89, 240);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+
